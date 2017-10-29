@@ -4,7 +4,7 @@ namespace EjercicioBanco
 {
     class Mainn
     {
-        static void Main(string[] args)
+        static void MostrarMenu()
         {
             Console.WriteLine("Seleccione una opcion");
             Console.WriteLine("");
@@ -13,11 +13,20 @@ namespace EjercicioBanco
             Console.WriteLine("3- Retirar dinero (Restar Saldo)");
             Console.WriteLine("4- Ingresar dinero (Sumar Saldo)");
             Console.WriteLine ("5 - Salir");
+        }
 
+        static void Main(string[] args)
+        {
+            
+            MostrarMenu();
             int opcion = int.Parse(Console.ReadLine());
 
-            if (opcion==1)
-            {
+            switch (opcion)
+      {
+
+            case 1:
+            
+                
                 List<Titular> listaPersonas = new List<Titular>();
                 List <Cuenta> listacuenta = new List <Cuenta>();
                  Titular titular = new Titular();
@@ -45,6 +54,7 @@ namespace EjercicioBanco
                 string opcionn = Console.ReadLine();
                 
              while(!opcionn.ToLower().Equals("n"))
+
                  {
                       Console.WriteLine("Ingrese DNI");
                     titular.dni2 =long.Parse( Console.ReadLine());
@@ -53,32 +63,35 @@ namespace EjercicioBanco
                     titular.nombre2 =  Console.ReadLine();
                 Console.WriteLine("Ingrese Apellido");
                     titular.apellido2 = Console.ReadLine();
-
                 break;
+                  
                  }
-                Console.WriteLine("Cuenta Creada!");
 
-
-
-            }
-            if (opcion == 2)
-            {
+                 Console.WriteLine("Cuenta Creada!");
+                 MostrarMenu();
+                 break;
+                 
+                  
                 
-            }
-            if (opcion == 3)
-            {
+                 
 
-            }
-            if (opcion == 4)
-            {
 
-            }
-            if (opcion == 5)
-            {
+            
+            case 2:
+           
+           break;
+            case 3:
+            break;
+            case 4:
+           break;
+            case 5:
+            
                 Console.WriteLine("Gracias por usar el sistema! Aprete cualquier tecla para salir");
                 Console.ReadKey();
-            }
-
+                break;
+      }
+            
+                  
             
             
 
