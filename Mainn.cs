@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 namespace EjercicioBanco
+
+
 {
     class Mainn
     {
@@ -40,19 +42,30 @@ namespace EjercicioBanco
             rick.FechaDeNacimiento = new DateTime(1960, 5, 1);
 
             //creamos cuenta
-            Cuenta cuenta1 = new Cuenta();
-            cuenta1.Numero = 231231;            
+            Cuenta cuenta1 = new CuentaCorriente();
+            cuenta1.Numero = 231231;           
+             
             //le damos la cuenta a morty
             cuenta1.Titular.Add(morty);
             cuenta1.Titular.Add(rick);
             
-            Cuenta cuenta2 = new Cuenta(348438);
+            Cuenta cuenta2 = new CuentaCorriente(348438);
             cuenta2.Titular.Add(morty);
+
+            break;
+
+            case 4:
+
 
             if(cuenta1.DepositarDinero(400))
             {
                 Console.WriteLine("Operación OK");
             }
+            break;
+
+
+            case 3:
+
             if(cuenta1.RetirarDinero(200))
             {
                 Console.WriteLine("Operación OK");
@@ -61,15 +74,26 @@ namespace EjercicioBanco
             {
                 Console.WriteLine("Operación OK");
             }
+            
+            cuenta1.MostrarOperacionesRealizadas();
+            Console.ReadKey();
+
+            break;
+           // Thread.Sleep(2000); //Duerme el proceso por 2 segundos, entre parentesis es milisegundos
+
+            case 2: 
 
             Console.WriteLine("La cuenta1 tiene un saldo: " + cuenta1.saldo);
             foreach(Persona titular in cuenta1.Titular)
             {
                 Console.WriteLine("La cuenta1 tiene el titular: " + titular.NombreCompleto());
             }
-
             break;
-                  
+
+   
+
+           
+                
             
             
 
