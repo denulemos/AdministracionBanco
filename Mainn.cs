@@ -26,71 +26,49 @@ namespace EjercicioBanco
 
             case 1:
             
-                
-                List<Titular> listaPersonas = new List<Titular>();
-                List <Cuenta> listacuenta = new List <Cuenta>();
-                 Titular titular = new Titular();
+                Persona morty = new Persona();
+            morty.nombre = "Morty";
+            morty.apellido = "Smith";
+            morty.DNI = 38234293;
+            morty.mail = "morty@mail.com";
+            morty.FechaDeNacimiento = new DateTime(1990, 5, 1);
+            Persona rick = new Persona();
+            rick.nombre = "Rick";
+            rick.apellido = "Sanchez";
+            rick.DNI = 12000099;
+            rick.mail = "rick@mail.com";
+            rick.FechaDeNacimiento = new DateTime(1960, 5, 1);
 
-                 Console.WriteLine("Ingrese DNI");
-                    titular.dni =long.Parse( Console.ReadLine());
-
-                Console.WriteLine("Ingrese Nombre");
-                    titular.nombre =  Console.ReadLine();
-                Console.WriteLine("Ingrese Apellido");
-                    titular.apellido = Console.ReadLine();
-
-                       Cuenta saldo = new Cuenta();
-
-                Console.WriteLine("Ingrese Saldo Inicial");
-                    saldo.saldo = long.Parse (Console.ReadLine());
-
-                    listaPersonas.Add(titular);
-                Cuenta cuenta = null;
-                listacuenta.Add(cuenta);
-
-                
-
-                Console.WriteLine("¿Quiere agregar un segundo titular? s/n");
-                string opcionn = Console.ReadLine();
-                
-             while(!opcionn.ToLower().Equals("n"))
-
-                 {
-                      Console.WriteLine("Ingrese DNI");
-                    titular.dni2 =long.Parse( Console.ReadLine());
-
-                Console.WriteLine("Ingrese Nombre");
-                    titular.nombre2 =  Console.ReadLine();
-                Console.WriteLine("Ingrese Apellido");
-                    titular.apellido2 = Console.ReadLine();
-                break;
-                  
-                 }
-
-                 Console.WriteLine("Cuenta Creada!");
-                 MostrarMenu();
-                 break;
-                 
-                  
-                
-                 
-
-
+            //creamos cuenta
+            Cuenta cuenta1 = new Cuenta();
+            cuenta1.Numero = 231231;            
+            //le damos la cuenta a morty
+            cuenta1.Titular.Add(morty);
+            cuenta1.Titular.Add(rick);
             
-            case 2:
-           
-           break;
-            case 3:
+            Cuenta cuenta2 = new Cuenta(348438);
+            cuenta2.Titular.Add(morty);
+
+            if(cuenta1.DepositarDinero(400))
+            {
+                Console.WriteLine("Operación OK");
+            }
+            if(cuenta1.RetirarDinero(200))
+            {
+                Console.WriteLine("Operación OK");
+            }
+            if(cuenta1.RetirarDinero(300))
+            {
+                Console.WriteLine("Operación OK");
+            }
+
+            Console.WriteLine("La cuenta1 tiene un saldo: " + cuenta1.saldo);
+            foreach(Persona titular in cuenta1.Titular)
+            {
+                Console.WriteLine("La cuenta1 tiene el titular: " + titular.NombreCompleto());
+            }
+
             break;
-            case 4:
-           break;
-            case 5:
-            
-                Console.WriteLine("Gracias por usar el sistema! Aprete cualquier tecla para salir");
-                Console.ReadKey();
-                break;
-      }
-            
                   
             
             
@@ -99,5 +77,6 @@ namespace EjercicioBanco
 
 
         }
+    }
     }
 }

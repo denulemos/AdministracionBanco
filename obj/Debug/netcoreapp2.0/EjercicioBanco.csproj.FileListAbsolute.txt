@@ -8,3 +8,13 @@ C:\Users\Administrador\Documents\EjercicioBanco\bin\Debug\netcoreapp2.0\Ejercici
 C:\Users\Administrador\Documents\EjercicioBanco\bin\Debug\netcoreapp2.0\EjercicioBanco.pdb
 C:\Users\Administrador\Documents\EjercicioBanco\obj\Debug\netcoreapp2.0\EjercicioBanco.dll
 C:\Users\Administrador\Documents\EjercicioBanco\obj\Debug\netcoreapp2.0\EjercicioBanco.pdb
+C:\Users\Administrador\denu\AdministracionBanco\obj\Debug\netcoreapp2.0\EjercicioBanco.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\denu\AdministracionBanco\obj\Debug\netcoreapp2.0\EjercicioBanco.AssemblyInfoInputs.cache
+C:\Users\Administrador\denu\AdministracionBanco\obj\Debug\netcoreapp2.0\EjercicioBanco.AssemblyInfo.cs
+C:\Users\Administrador\denu\AdministracionBanco\obj\Debug\netcoreapp2.0\EjercicioBanco.dll
+C:\Users\Administrador\denu\AdministracionBanco\obj\Debug\netcoreapp2.0\EjercicioBanco.pdb
+C:\Users\Administrador\denu\AdministracionBanco\bin\Debug\netcoreapp2.0\EjercicioBanco.deps.json
+C:\Users\Administrador\denu\AdministracionBanco\bin\Debug\netcoreapp2.0\EjercicioBanco.runtimeconfig.json
+C:\Users\Administrador\denu\AdministracionBanco\bin\Debug\netcoreapp2.0\EjercicioBanco.runtimeconfig.dev.json
+C:\Users\Administrador\denu\AdministracionBanco\bin\Debug\netcoreapp2.0\EjercicioBanco.dll
+C:\Users\Administrador\denu\AdministracionBanco\bin\Debug\netcoreapp2.0\EjercicioBanco.pdb

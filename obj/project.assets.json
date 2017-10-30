@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador\\Documents\\EjercicioBanco\\EjercicioBanco.csproj",
+      "projectUniqueName": "C:\\Users\\Administrador\\denu\\AdministracionBanco\\EjercicioBanco.csproj",
       "projectName": "EjercicioBanco",
-      "projectPath": "C:\\Users\\Administrador\\Documents\\EjercicioBanco\\EjercicioBanco.csproj",
+      "projectPath": "C:\\Users\\Administrador\\denu\\AdministracionBanco\\EjercicioBanco.csproj",
       "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador\\Documents\\EjercicioBanco\\obj\\",
+      "outputPath": "C:\\Users\\Administrador\\denu\\AdministracionBanco\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

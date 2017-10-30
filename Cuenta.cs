@@ -1,30 +1,55 @@
 using System;
+using System.Collections.Generic;
 
 namespace EjercicioBanco
 {
     class Cuenta
     {
-        public long saldo {get; set;}
+        public decimal saldo {get; set;}
+        public long Numero {get; set;}
 
-      /*  public override int sacarsaldo()
+        public List <Persona> Titular {get; set;}
+
+        public Cuenta()
+
         {
-            return saldo - retiro;
-         }
+            this.saldo = 0;
+            this.Titular = new List <Persona>();
 
-         public override int sumarsaldo()
-         {
-             return saldo + ganancia;
-         }
+        }
 
-         public override long versaldo()
-         {
-             return  saldo;
-
-          }
+        public Cuenta (long numero)
+        {
+            
+        }
 
 
-*/
+        /// <summary>
+        /// Se retira dinero de la cuenta con este metodo
+        /// </summary>
+        /// <param name="cantidad"></param>
+        /// <returns></returns>
+
+        public bool RetirarDinero(decimal cantidad)
+
+     {
+             if (saldo >= cantidad)
+             {
+                 this.saldo -= cantidad;
+                 return true;
+             }
+
+             return false;
+       }
+           
+
+    public bool DepositarDinero(decimal cantidad)
+        {
+            this.saldo += cantidad;
+            return true;
+        }
 
     }
 
 }
+
